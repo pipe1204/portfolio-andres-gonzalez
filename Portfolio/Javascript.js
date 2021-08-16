@@ -34,3 +34,36 @@ function scrollPageToProject() {
 
 project.onclick = scrollPageToProject
 
+const project1Section = document.getElementById("project1")
+const project1Offset = project1Section.offsetTop - 100
+
+const project2Section = document.getElementById("project2")
+const project2Offset = project2Section.offsetTop
+
+const project3Section = document.getElementById("project3")
+const project3Offset = project3Section.offsetTop
+
+function showProject1() {
+    if (window.scrollY > project1Offset) {
+        project1Section.style.opacity = "1"
+    }
+}
+
+document.addEventListener("scroll", showProject1)
+
+function showProject2() {
+    if (window.scrollY > project1Offset) {
+        project2Section.style.opacity = "1"
+    }
+}
+
+document.addEventListener("scroll", showProject2)
+
+function showProject3() {
+    if (window.scrollY > project1Offset) {
+        project3Section.style.opacity = "1"
+    }
+}
+
+document.addEventListener("scroll", showProject3)
+
