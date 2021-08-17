@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.container-hire a {
+    text-decoration: none;
+    color: black;
+}
+
+.container-header {
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: sticky;
+    top: 0;
+    height: 80px;
+    z-index: 999;
+    box-shadow: rgb(0 0 0 / 4%) 0px 4px 4px;
+}
+
+.line {
+    width: 5rem;
+    height: 0.25rem;
+    background: #ff5851;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+
+span {
+    color: #ff5851;
+}
+
+.container-hire {
+    position: fixed;
+    top: 80px;
+    right: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.hire-text {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: ease-out 0.3s;
+}
+
+.hire-text:hover {
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #ff5851;
+}
+
+.hireIcon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.first-section {
+    width: 100%;
+    height: 680px;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.greeting-div {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.greeting {
+    font-size: 15rem;
+}
+
+.greeting-subtitle {
+    text-align: center;
+}
+
+.left-div {
+    background-color: #ff5851;
+    width: 50%;
+    height: 100%;
+}
+
+.right-div {
+    background-color: #f8f8f8;
+    width: 50%;
+    height: 100%;
+}
+
+.second-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.div-personal-description {
+    text-align: center;
+    padding: 0px 80px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.personal-description {
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+#features {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 30px;
+    margin-right: 30px;
+    opacity: 0;
+    transition: 2s ease;
+}
+
+.feature {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    white-space: pre-wrap;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.feature-icon {
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+}
+
+.feature-title {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.feature-description {
+    white-space: pre-wrap;
+    line-height: 2rem;
+}
+
+.third-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.work-div {
+    width: 50%;
+    margin-left: 50px;
+    margin-top: 200px;
+}
+
+.work-heading {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.half-word {
+    background: linear-gradient(to top, #ff9490 50%, transparent 50%);
+    color: black;
+}
+
+.line-work{
+    width: 5rem;
+    height: 0.25rem;
+    background: #ff5851;
+    margin-bottom: 30px;
+}
+
+.work-parragraph {
+    line-height: 2rem;
+    margin-bottom: 40px;
+}
+
+.work-button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5851;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: ease-out 0.25s;
+}
+
+.work-button:hover {
+    background-color: black;
+
+}
+
+.container-projects {
+    width: 90%;
+    margin: auto;
+}
+
+.projects {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 80%;
+}
+
+.projects-title {
+    padding-right: 40px;
+}
+
+.projects-heading {
+    font-size: 6rem;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.projects-text {
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+}
+
+.my-projects {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#project1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: solid 0.3px lightgrey;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    opacity: 0;
+    transition: 2s ease;
+}
+
+#project2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: solid 0.3px lightgrey;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    opacity: 0;
+    transition: 2s ease;
+}
+
+#project3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    opacity: 0;
+    transition: 2s ease;
+}
+
+.project-img {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+.image-project {
+    width: 100%;
+    height: 100%;
+}
+
+.project-text {
+    width: 60%;
+    margin: auto;
+    margin-left: 100px;
+}
+
+.project-name {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.project-description {
+    line-height: 2rem;
+    margin-bottom: 20px;
+}
+
+#andresIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: solid 0.5px rgb(163, 163, 163);
+    position: fixed;
+    top: 70px;
+    left: 30px;
+    cursor: pointer;
+    scroll-behavior: smooth;
+}
+
+.linkedinIcon {
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    position: fixed;
+    top: 190px;
+    left: 23px;
+}
+
+.githubIcon {
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    position: fixed;
+    top: 230px;
+    left: 23px;
+}
+
+#projectIcon {
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    position: fixed;
+    top: 150px;
+    left: 23px;
+}
+
+.made {
+    position: fixed;
+    font-size: 0.8rem;
+    transform-origin: bottom left;
+    transform: rotate(-90deg);
+    bottom: 84px;
+    left: 58px;
+    text-align: left;
+    color: #4e4e4e;
+    letter-spacing: .02em;
+}
+
+@media screen and (max-width: 480px) {
+
+    .container-hire {
+        right: 40px;
+    }
+
+    .first-section {
+        height: 450px;
+    }
+
+    .greeting-div {
+        height: 50%;
+    }
+
+    .greeting {
+        font-size: 8rem;
+    }
+    .div-personal-description {
+        margin-top: 0px;
+        padding: 0px 50px;
+    }
+
+    .personal-description {
+        font-size: 20px;
+    }
+
+    #features {
+        flex-direction: column;
+    }
+
+    .feature {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .work-div {
+        width: 70%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .line-work {
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .work-parragraph {
+        font-size: 20px;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .projects-title {
+        padding: 0px;
+    }
+
+    .projects-heading {
+        font-size: 3.5rem;
+    }
+
+    .projects-text {
+        width: 90%;
+        padding: 0px;
+        text-align: center;
+    }
+
+    #project1 {
+        flex-direction: column;
+    }
+
+    #project2 {
+        flex-direction: column;
+    }
+
+    .project-img {
+        width: 100%;
+    }
+    .project-text {
+        width: 90%;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    #project3 {
+        flex-direction: column;
+    }
+
+    #andresIcon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 20px;
+        border: solid 0.5px rgb(163, 163, 163);
+        position: fixed;
+        top: 70px;
+        left: 10px;
+        cursor: pointer;
+        scroll-behavior: smooth;
+    }
+    
+    .linkedinIcon {
+        width: 25px;
+        height: 25px;
+        margin-left: 20px;
+        position: fixed;
+        top: 190px;
+        left: 4px;
+    }
+    
+    .githubIcon {
+        width: 25px;
+        height: 25px;
+        margin-left: 20px;
+        position: fixed;
+        top: 230px;
+        left: 4px;
+    }
+    
+    #projectIcon {
+        width: 25px;
+        height: 25px;
+        margin-left: 20px;
+        position: fixed;
+        top: 150px;
+        left: 4px;
+    }
+
+    .made {
+        left: 40px;
+        bottom: 200px;
+    }
+
+}
