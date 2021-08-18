@@ -384,7 +384,11 @@ span {
     }
 
     .greeting {
-        font-size: 8rem;
+        font-size: 7rem;
+    }
+
+    .greeting-subtitle {
+        font-size: 16px;
     }
     .div-personal-description {
         margin-top: 0px;
@@ -506,6 +510,14 @@ span {
     .made {
         left: 40px;
         bottom: 200px;
+    }
+
+    .hire-text {
+        font-size: 12px;
+    }
+
+    .container-hire {
+        right: 20px;
     }
 
 }
