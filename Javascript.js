@@ -67,3 +67,20 @@ function showProject3() {
 
 document.addEventListener("scroll", showProject3)
 
+const sidebar = document.getElementById("sidebar")
+const menuIcon = document.getElementById("menuIcon")
+let flag = false
+
+function showMenu() {
+    flag = !flag
+    console.log(flag);
+
+    if (flag === true) {
+        sidebar.style.opacity = "1"
+    } else if (flag === false) {
+        sidebar.style.opacity = "0"
+    }
+}
+
+menuIcon.onclick = showMenu
+

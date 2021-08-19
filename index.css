@@ -317,6 +317,20 @@ span {
     margin-bottom: 20px;
 }
 
+#menuIcon {
+    position: fixed;
+    top: 60px;
+    left: 34px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#menuIcon:hover {
+    transform: rotate(180deg);
+}
+
 #andresIcon {
     width: 50px;
     height: 50px;
@@ -324,7 +338,7 @@ span {
     margin-right: 20px;
     border: solid 0.5px rgb(163, 163, 163);
     position: fixed;
-    top: 70px;
+    top: 130px;
     left: 30px;
     cursor: pointer;
     scroll-behavior: smooth;
@@ -335,7 +349,7 @@ span {
     height: 25px;
     margin-left: 20px;
     position: fixed;
-    top: 190px;
+    top: 250px;
     left: 23px;
 }
 
@@ -344,7 +358,7 @@ span {
     height: 25px;
     margin-left: 20px;
     position: fixed;
-    top: 230px;
+    top: 290px;
     left: 23px;
 }
 
@@ -353,7 +367,7 @@ span {
     height: 25px;
     margin-left: 20px;
     position: fixed;
-    top: 150px;
+    top: 210px;
     left: 23px;
 }
 
@@ -369,10 +383,20 @@ span {
     letter-spacing: .02em;
 }
 
+#sidebar {
+    opacity: 0;
+    transition: 0.7s ease;
+}
+
 @media screen and (max-width: 480px) {
 
     .container-hire {
-        right: 40px;
+        top: 60px;
+        right: 20px;
+    }
+
+    .hire-text {
+        font-size: 15px;
     }
 
     .first-section {
@@ -384,8 +408,13 @@ span {
     }
 
     .greeting {
-        font-size: 8rem;
+        font-size: 7rem;
     }
+
+    .greeting-subtitle {
+        font-size: 16px;
+    }
+
     .div-personal-description {
         margin-top: 0px;
         padding: 0px 50px;
@@ -470,7 +499,7 @@ span {
         margin-right: 20px;
         border: solid 0.5px rgb(163, 163, 163);
         position: fixed;
-        top: 70px;
+        top: 120px;
         left: 10px;
         cursor: pointer;
         scroll-behavior: smooth;
@@ -481,7 +510,7 @@ span {
         height: 25px;
         margin-left: 20px;
         position: fixed;
-        top: 190px;
+        top: 240px;
         left: 4px;
     }
     
@@ -490,7 +519,7 @@ span {
         height: 25px;
         margin-left: 20px;
         position: fixed;
-        top: 230px;
+        top: 280px;
         left: 4px;
     }
     
@@ -499,13 +528,21 @@ span {
         height: 25px;
         margin-left: 20px;
         position: fixed;
-        top: 150px;
+        top: 200px;
         left: 4px;
     }
 
     .made {
         left: 40px;
         bottom: 200px;
+    }
+
+    #menuIcon {
+        position: fixed;
+        top: 60px;
+        left: 18px;
+        width: 35px;
+        height: 35px;
     }
 
 }
